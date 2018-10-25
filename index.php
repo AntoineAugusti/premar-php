@@ -48,7 +48,7 @@ for ($i=0; $i < $nbResults; $i++) {
       $current['valid_until'] = formatDate($value);
     }
     if ($key === 'url') {
-      $current['url'] = "$URLS[$region]/$value";
+      $current['url'] = "$URLS[$region]$value";
     }
   }
   $res[] = $current;
