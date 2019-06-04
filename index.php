@@ -24,6 +24,7 @@ foreach ($data as $avurnav) {
   $current['valid_until'] = substr($avurnav['dateFin'], 0, 10);
   $current['url'] = $URLS[$region]."/avis-urgents-aux-navigateurs/".$avurnav['slug'];
   $current['title'] = $avurnav['title'];
+  $current['number'] = $avurnav['numero'];
   $current['latitude'] = floatval($avurnav['latitude']);
   $current['longitude'] = floatval($avurnav['longitude']);
 
