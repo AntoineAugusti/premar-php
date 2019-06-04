@@ -23,7 +23,7 @@ foreach ($data as $avurnav) {
   $current['valid_from'] = substr($avurnav['dateDebut'], 0, 10);
   $current['valid_until'] = substr($avurnav['dateFin'], 0, 10);
   $current['url'] = $URLS[$region]."/avis-urgents-aux-navigateurs/".$avurnav['slug'];
-  $current['title'] = $avurnav['title'];
+  $current['title'] = $avurnav['title']." - n°".$avurnav['numero'];
   $current['number'] = $avurnav['numero'];
   $current['latitude'] = floatval($avurnav['latitude']);
   $current['longitude'] = floatval($avurnav['longitude']);
